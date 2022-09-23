@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+body {
+    overflow-y: auto;
+    background-color: #232834;
+}
+body::-webkit-scrollbar {
+    width: 0.5rem;
+    background-color: #181c24;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+    color: #555;
+}
+.container {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0rem auto;
+}
+.container-login-registration {
+    width: 100%;
+    max-width: 48rem;
+    margin: 0rem auto;
+}
+.container-footer {
+    width: 100%;
+    max-width: 100rem;
+    margin: 0rem auto;
+}
+#select-background {
+    background-color: #ffb850;
+}
+#select-content {
+    color: #181c24;
+}
+.current-vip {
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    color: #181c24;
+    background-color: #ffb850;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 0rem 0.3rem;
+    cursor: default;
+}
+.current-voice {
+    position: absolute;
+    top: 1.5rem;
+    right: 4rem;
+    font-size: 1.2rem;
+    background-color: #ff50b6e1;
+    border: none;
+}

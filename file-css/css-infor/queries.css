@@ -1,0 +1,109 @@
+/* Spacing: 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 160 */
+/* Font Scale: 12 / 14 / 16 / 18 / 20 / 24 / 28 / 32 / 36 / 42 / 48 / 54 / 60 / 68 / 76 / 84 / 92 */
+
+/* Các tablet (landscape) */
+@media (max-width: 1200px) {
+   .container {
+       max-width: 100rem;
+   }
+   main .main-body {
+       gap: 3rem;
+   }
+   main .main-body .introduce-movie {
+       width: 64rem;
+   }
+   main .main-body .introduce-movie .movie-cast .cast {
+       width: 100%;
+   }
+   main .main-body .introduce-movie .orther-movie .body-orther-movie .content-movie {
+       width: 14rem;
+   }
+   main .main-body .hot-movie {
+    width: 32rem;
+   }
+    footer .another-link {
+        text-align: center;
+    }
+}
+
+/* Các tablet (portrait) */
+@media (max-width: 944px) {
+   
+    header .nav-mobile {
+        display: block;
+    }
+    header .header-user,
+    header .header-menu {
+        display: none;
+    }
+    main .main-body {
+        display: block;
+        padding: 0rem 1rem;
+    }
+    main .main-body .introduce-movie {
+        width: 100%;
+    }
+    main .main-body .introduce-movie .information .movie-img {
+        max-width: 50rem;
+        height: 25rem;
+    }
+    main .main-body .introduce-movie .information {
+        display: block;
+    }
+    main .main-body .introduce-movie .information > div:nth-child(1) {
+       display: flex;
+       justify-content: center;
+    }
+    main .main-body .introduce-movie .information .information-rating .body-information {
+        height: 100%;
+        overflow: unset;
+    }
+    main .main-body .introduce-movie .orther-movie .body-orther-movie .content-movie {
+        width: 15rem;
+    }
+    main .main-body .hot-movie {
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie,
+    main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie {
+        flex-grow: 1;
+    }
+    main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie .title-trend-movie,
+    main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie .title-new-movie {
+        width: 100%;
+    }
+}
+
+/* Các tablet có kích thước nhỏ */
+@media (max-width: 704px) {
+    header .nav-mobile {
+        padding: 1.5rem;
+    }
+    header .nav-mobile .header-user-mobile .logo-img {
+        width: 12rem;
+    }
+    header .nav-mobile .header-menu-mobile .header-menu a {
+        padding: 0rem 0.5rem;
+    }
+    main .main-body .introduce-movie .orther-movie .body-orther-movie {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Các thiết bị di động */
+@media (max-width: 544px) {
+    main .main-body .introduce-movie .orther-movie .body-orther-movie {
+        grid-template-columns: 1fr 1fr;
+    }
+    main .main-body .introduce-movie .orther-movie .body-orther-movie .content-movie,
+    main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie .title-trend-movie, main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie .title-new-movie {
+       width: 15rem;
+    }
+}
+@media (max-width: 375px) {
+    html {
+        font-size: 50%;
+    }
+}

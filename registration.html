@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên | BiluTV</title>
+    <link rel="icon" href="https://biluu.tv/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./file-css/general.css">
+        <link rel="stylesheet" href="./file-css/css-registration/styles.css">
+</head>
+<body>
+    <div class="registration-form container-login-registration">
+        <div class="header-form">
+            <p>Đăng ký tài khoản</p>
+        </div>
+        <form class="user-password">
+            <div class="user">
+                <ion-icon name="person"></ion-icon>
+                <input type="text" placeholder="Tên tài khoản (không dấu)">
+            </div>
+            <div class="password">
+                <ion-icon name="lock-closed"></ion-icon>
+                <input type="text" placeholder="Mật khẩu (6-15 kí tự)">
+            </div>
+            <div class="password-again">
+                <ion-icon name="lock-closed"></ion-icon>
+                <input type="text" placeholder="Xác nhận mật khẩu">
+            </div>
+        </form>
+        <div class="check-point">
+            <div class="button-checkbox">
+                <button></button>
+            </div>
+            <p>Tôi không phải là người máy</p>
+            <div class="recaptcha">
+                <div class="recaptcha-logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/RecaptchaLogo.svg/225px-RecaptchaLogo.svg.png" alt="Recaptcha-Logo">
+                </div>
+                <div class="recaptcha-content">
+                    <p>
+                        <a href="#">Bảo mật </a>        
+                        -
+                        <a href="#">Điều khoản</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="button-registration">
+            <button>Đăng Ký</button>
+        </div>
+        <div class="change-to-login">
+            <p>Bạn đã có tài khoản ? </p>
+            <a href="./login.html">Đăng Nhập</a>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

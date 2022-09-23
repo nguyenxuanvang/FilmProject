@@ -1,0 +1,134 @@
+.registration-form {
+    border-radius: 1.5rem;
+    border: 0.1rem solid #333;
+    margin-top: 3rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registration-form .header-form {
+    width: 45rem;
+    border-bottom: 0.1rem solid #333;
+    margin-bottom: 3rem;
+}
+.registration-form .header-form p {
+    color: #fff;
+    font-size: 2.2rem;
+    padding: 1rem 0rem;
+    font-weight: 500;
+    text-align: center;
+}
+.registration-form .user-password .user,
+.registration-form .user-password .password,
+.registration-form .user-password .password-again {
+    width: 45rem;
+    text-align: center;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+.registration-form .user-password .user ion-icon,
+.registration-form .user-password .password ion-icon,
+.registration-form .user-password .password-again ion-icon {
+    position: absolute;
+    top: 0.7rem;
+    left: 8rem;
+    font-size: 1.7rem;
+}
+.registration-form .user-password .user input,
+.registration-form .user-password .password input,
+.registration-form .user-password .password-again input {
+    width: 30rem;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+}
+.registration-form .check-point {
+    width: 30rem;
+    background-color: #fff;
+    display: flex;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+.registration-form .check-point .button-checkbox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.registration-form .check-point .button-checkbox button {
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: #fff;
+    outline: none;
+    border: 0.3rem solid #6d6767b9;
+    border-radius: 0.3rem;
+}
+.registration-form .check-point .button-checkbox button:hover {
+    border: 0.3rem solid #575353da;
+}
+.registration-form .check-point > p {
+    flex: 3;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+}
+.registration-form .check-point .recaptcha {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registration-form .check-point .recaptcha .recaptcha-logo {
+    width: 5rem;
+}
+.registration-form .check-point .recaptcha .recaptcha-logo img {
+    width: 100%;
+}
+.registration-form .check-point .recaptcha .recaptcha-content p {
+    font-size: 0.7rem;
+    padding: 0rem 0.5rem;
+    padding-bottom: 1rem;
+}
+.registration-form .check-point .recaptcha .recaptcha-content p a {
+    font-size: 0.7rem;
+}
+.registration-form .button-registration button {
+    width: 30rem;
+    padding: 1rem 1.8rem;
+    background: #0768EA;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+.registration-form .button-registration button:hover {
+    opacity: 0.9;
+}
+.registration-form .change-to-login {
+    width: 30rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.registration-form .change-to-login p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.registration-form .change-to-login a{
+    font-size: 1.5rem;
+    color: #fff;
+    background-color: #337AB7;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+}
+.registration-form .change-to-login a:hover {
+   background-color: #286090;
+   color: #000;
+}

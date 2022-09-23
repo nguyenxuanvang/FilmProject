@@ -1,0 +1,95 @@
+.login-form {
+    border-radius: 1.5rem;
+    border: 0.1rem solid #333;
+    margin-top: 3rem;
+    height: 45rem;
+}
+.login-form .header-form {
+    display: flex;
+    justify-content: center;
+}
+.login-form .header-form p {
+    color: #fff;
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    font-weight: 500;
+    border-bottom: 0.1rem solid #333;
+    width: 45rem;
+}
+.login-form .logo-img {
+    height: 6.4rem;
+    width: 6.4rem;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 3rem auto;
+}
+.login-form .logo-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.login-form .user-password {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-form .user-password .user,
+.login-form .user-password .password,
+.login-form .user-password .login-button {
+    margin-bottom: 1.5rem;  
+    position: relative;
+}
+.login-form .user-password .user ion-icon,
+.login-form .user-password .password ion-icon {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 0.8rem;
+    left: 0.5rem;
+}
+.login-form .user-password .user input,
+.login-form .user-password .password input {
+    width: 30rem;
+    border-radius: 0.5rem;
+    padding: 1rem 3rem;
+    border: none;
+    outline: none;
+}
+.login-form .user-password .login-button button {
+    width: 30rem;
+    background-color: #0768EA;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 2.2rem;
+    padding: 1rem 1.8rem;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.login-form .user-password .login-button button:hover {
+    opacity: 0.9;
+}
+.login-form .user-password .change-to-registration {
+    display: flex;
+    justify-content: start;
+    width: 30rem;
+    gap: 0.5rem;
+    align-items: center;
+}
+.login-form .user-password .change-to-registration p {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.login-form .user-password .change-to-registration a {
+   text-decoration: none;
+   font-size: 1.5rem;
+   color: #fff;
+   background-color: #D9534F;
+   border-radius: 0.4rem;
+   padding: 0.5rem 1rem;
+}
+.login-form .user-password .change-to-registration a:hover {
+    background-color: #c9302c;
+}

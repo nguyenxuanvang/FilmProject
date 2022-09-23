@@ -1,0 +1,112 @@
+/* Spacing: 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 160 */
+/* Font Scale: 12 / 14 / 16 / 18 / 20 / 24 / 28 / 32 / 36 / 42 / 48 / 54 / 60 / 68 / 76 / 84 / 92 */
+
+/* Các tablet (landscape) */
+@media (max-width: 1200px) {
+     html {
+        font-size: 52%;
+    }
+}
+
+/* Các tablet (portrait) */
+@media (max-width: 944px) {
+    html {
+        font-size: 50%;
+    }
+    header .nav-mobile {
+        display: block;
+    }
+    header .header-user {
+        display: none;
+    }
+    header .header-menu {
+        display: none;
+    }
+    main .main-body {
+        display: block;
+        padding: 0rem 1.875rem;
+    }
+    .movie-display-flex {
+        width: 100%;
+    }
+    .movie-display-flex > li {
+        width: 19rem;
+    }
+    .movie-display-flex .movie-img {
+        height: 27rem;
+    }
+    .movie-display-flex .change-left-button {
+        height: 27rem;
+    }
+    .movie-display-flex .change-right-button {
+        height: 27rem;
+    }
+    .section-12 .movie-display-flex > li {
+        width: 30rem;
+    }
+    .section-12 .movie-display-flex .movie-img {
+        height: 20rem;
+    }
+    .section-12 .movie-display-flex .change-left-button {
+        height: 20rem;
+    }
+    .section-12 .movie-display-flex .change-right-button {
+        height: 20rem;
+    }
+    main .main-body .hot-movie .trend-movie .header-trend-movie p,
+    main .main-body .hot-movie .trend-movie .header-trend-movie a,
+    main .main-body .hot-movie .new-movie .header-new-movie p,
+    main .main-body .hot-movie .new-movie .header-new-movie a {
+        font-size: 1.875rem;
+    }
+    main .main-body .hot-movie .trend-movie .body-trend-movie .number-rating {
+        font-size: 2.5rem;
+    }
+    main .main-body .hot-movie .trend-movie .body-trend-movie .img-trend-movie,
+    main .main-body .hot-movie .new-movie .body-new-movie .img-new-movie {
+        height: 6.25rem;
+        width: 6.25rem;
+    }
+    main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie,
+    main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie  {
+        flex-grow: 1;
+    }
+    main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie .title-trend-movie,
+    main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie .title-new-movie {
+        font-size: 1.875rem;
+        width: 100%;
+    }
+    main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie .ep-view-trend-movie,
+    main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie .ep-view-new-movie {
+        font-size: 1.5rem;
+    }
+}
+
+/* Các tablet có kích thước nhỏ */
+@media (max-width: 704px) {
+  main {
+      padding-top: 3rem;
+  }
+  .movie-display-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .movie-display-grid .movie-img {
+      height: 30rem;
+  }
+  .section-12 .movie-display-flex > li {
+      width: 27.75rem;
+  }
+}
+
+/* Các thiết bị di động */
+@media (max-width: 544px) {
+    header .nav-mobile .header-menu-mobile .header-menu a {
+        padding: 0rem 1rem;
+    }
+    .movie-display-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    html {
+        font-size: 39%;
+    }
+}

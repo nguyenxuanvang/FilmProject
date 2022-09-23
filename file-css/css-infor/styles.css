@@ -1,0 +1,860 @@
+header .nav-mobile {
+    background-color: #673ab7;
+    padding: 1.5rem 2rem;
+    display: none;
+}
+header .nav-mobile .header-user-mobile {
+    display: flex;
+    gap: 1.8rem;
+    padding-bottom: 2.125rem;
+}
+header .nav-mobile .header-user-mobile .logo-img {
+    width: 18.75rem;
+}
+header .nav-mobile .header-user-mobile .logo-img img {
+    width: 100%;
+}
+header .nav-mobile .header-user-mobile .search-input {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+header .nav-mobile .header-user-mobile .search-input input {
+    width: 100%;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    border: none;
+    position: relative;
+}
+header .nav-mobile .header-user-mobile .search-input button {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 2.5rem;
+    color: #666;
+}
+header .nav-mobile .header-menu-mobile .header-menu {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+header .nav-mobile .header-menu-mobile .header-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    border-right: 0.125rem solid #000;
+    padding: 0rem 2.5rem;
+    gap: 0.375rem;
+}
+header .nav-mobile .header-menu-mobile .header-menu a ion-icon {
+    
+    font-size: 2.5rem;
+}
+header .nav-mobile .header-menu-mobile .header-menu span {
+    font-size: 1.2rem;
+}
+header .header-user {
+    display: flex;
+    height: 7.8rem;
+    background-color: #673ab7;
+}
+header .header-user .logo-img {
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+}
+header .header-user .logo-img img {
+    height: 5.3rem;
+}
+header .header-user .search-input {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+}
+header .header-user .search-input input {
+    height: 3.5rem;
+    width: 35rem;
+    color: #666;
+    border-radius: 5rem;
+    padding: 1rem 0rem;
+    padding-left: 2rem;
+    line-height: 3.5rem;
+    background-color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+header .header-user .search-input button {
+    background-color: #FFF;
+    border: none;
+    position: relative;
+    right: 3.2rem;
+    top: 0.3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+header .header-user .user-button {
+    flex: 0.9;
+    display: flex;
+    gap: 1.5rem;
+}
+header .header-user .user-button .sign-up-vip,
+header .header-user .user-button .sign-up,
+header .header-user .user-button .login {
+    display: flex;
+    align-items: center;
+}
+header .header-user .user-button .sign-up-vip a {
+    color: #da9e1cFF;
+    border: 1px solid #da9e1cFF;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 1.4rem 1rem;
+    background-color: #181c24;
+    font-weight: 500;
+}
+header .header-user .user-button .sign-up a,
+header .header-user .user-button .login a {
+    font-size: 1.4rem;
+    color: #FFF;
+    background-color: #FFFFFF1A;
+    border: 1px solid #FFFFFF1A;
+    border-radius: 5rem;
+    padding: 0.8rem;
+}
+header .header-user .user-button .sign-up a:hover,
+header .header-user .user-button .login a:hover {
+    background-color: #ffffff38;
+}
+header .header-menu {
+    background-color: #000000e1
+}
+header .header-menu .navigation {
+    display: flex;
+    height: 4rem;
+}
+header .header-menu .navigation>li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .header-menu .navigation>li a {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+header .header-menu .navigation > li:hover {
+    background-color: #ffb850;
+}
+header .header-menu .navigation > li:hover > a {
+    color: #181c24;
+}
+header .header-menu .navigation li a ion-icon {
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.3rem;
+}
+header .header-menu .navigation li .sub-navigation {
+    position: absolute;
+    top: 100%;
+    background-color: #030303;;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 55rem;
+    display: none;
+    border: 0.1rem solid #ffffff4d;
+    z-index: 1;
+}
+header .header-menu .navigation > li:hover .sub-navigation {
+    display: grid;
+}
+header .header-menu .navigation li .sub-navigation li {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+header .header-menu .navigation li .sub-navigation li a {
+    font-weight: 300;
+    height: 100%;
+    width: 100%;
+}
+header .header-menu .navigation li .sub-navigation li:hover {
+    background-color: #ffb850;
+}
+header .header-menu .navigation li .sub-navigation li:hover a {
+    color: #181c24;
+}
+main {
+    background-color: #232834;
+    padding-bottom: 3rem;
+}
+main .main-body {
+    display: flex;
+    padding-top: 7rem;
+    gap: 5rem;
+}
+main .main-body .introduce-movie {
+    width: 77rem;
+}
+main .main-body .introduce-movie .header-address {
+    margin: 2.5rem 0rem;
+}
+main .main-body .introduce-movie .header-address a {
+    font-size: 1.5rem;
+    color: #AAAAAA;
+    font-weight: 700;
+    background-color: #2A2F3A;
+    padding: 1rem 1rem;
+    padding-left: 3rem;
+    border: 0.1rem solid #000;
+}
+
+main .main-body .introduce-movie .information {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+main .main-body .introduce-movie .information .movie-img {
+    flex: 1;
+    max-width: 27rem;
+    height: 37.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+}
+main .main-body .introduce-movie .information .movie-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .main-body .introduce-movie .information .movie-img .follow-watching {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #00000080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+main .main-body .introduce-movie .information .movie-img .follow-watching ion-icon {
+    position: relative;
+    top: 0.1rem;
+}
+main .main-body .introduce-movie .information .movie-img .follow-watching .follow {
+    background-color: #5cb85c;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 0.4rem;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .information .movie-img .follow-watching .follow:hover {
+    background-color: #449d44;
+}
+main .main-body .introduce-movie .information .movie-img .follow-watching .watching {
+    background-color: #f0ad4e;
+    color: #000;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 0.4rem;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .information .movie-img .follow-watching .watching:hover {
+    background-color: #ec971f;
+}
+main .main-body .introduce-movie .information .movie-img .tags-info {
+    position: absolute;
+    top: 1.2rem;
+    right: 1.2rem   ;
+    display: flex;
+    gap: 0.5rem;
+}
+main .main-body .introduce-movie .information .movie-img .tags-info .top,
+main .main-body .introduce-movie .information .movie-img .tags-info .volume {
+    color: #fff;
+    background-color: #e91e63;
+    font-size: 1.5rem;
+    padding: 0.3rem;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .information .movie-img .tags-info .vip {
+    color: #000;
+    background-color: yellow;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0.3rem;
+}
+main .main-body .introduce-movie .information .information-rating {
+    flex: 1;
+}
+main .main-body .introduce-movie .information .information-rating .header-information {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .information .information-rating .sub-header-information {
+    font-size: 1.5rem;
+    color: #AAA;
+    padding: 0.7rem 0rem;
+}
+main .main-body .introduce-movie .information .information-rating .body-information {
+    height: 21rem;
+    overflow-y: scroll;
+}
+main .main-body .introduce-movie .information .information-rating .body-information::-webkit-scrollbar {
+    width: 0.3rem;
+    background-color: #181c24;
+}
+main .main-body .introduce-movie .information .information-rating .body-information::-webkit-scrollbar-thumb {
+    background-color: #666; 
+}
+
+main .main-body .introduce-movie .information .information-rating .body-information p {
+    font-size: 1.5rem;
+    color: #AAA;
+    padding: 0.3rem 0rem; 
+}
+main .main-body .introduce-movie .information .information-rating .body-information a {
+    font-size: 1.5rem;
+    color: #6ba3cf;
+}
+main .main-body .introduce-movie .information .information-rating .body-information a:hover {
+    color: #ffb850;
+}
+main .main-body .introduce-movie .information .information-rating .body-information .body-information-1 span {
+    color: #e92720;
+    font-size: 2rem;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .information .information-rating .body-information .body-information-2 a {
+    font-size: 1.5rem;
+    color: #000;
+    padding: 0.2rem 0.3rem;
+    background-color: #ffb850;
+    border-radius: 0.2rem;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .information .information-rating .body-information .body-information-2 a:hover {
+    background-color: #d9a1f1;
+}
+main .main-body .introduce-movie .information .information-rating .body-information .body-information-3 p {
+    font-size: 1.5rem;
+    color: #AAA;
+    font-weight: 700;
+}
+main .main-body .introduce-movie .information .information-rating .movie-rating {
+    display: flex;
+    margin-top: 3rem;
+    gap: 1.5rem;
+}
+main .main-body .introduce-movie .information .information-rating .movie-rating .pointers {
+    border: 0.1rem solid #ffb850;
+    border-radius: 0.5rem;
+}
+main .main-body .introduce-movie .information .information-rating .movie-rating .pointers p {
+    font-size: 3rem;
+    color: #ffb850;
+    padding: 1.2rem 1rem;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .information .information-rating .movie-rating .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+}
+main .main-body .introduce-movie .information .information-rating .movie-rating .rating .view-rating {
+    display: flex;
+    font-size: 1.5rem;
+    color: #AAA;
+    gap: 0.5rem;
+}
+main .main-body .introduce-movie .movie-cast {
+    position: relative;
+}
+main .main-body .introduce-movie .movie-cast .cast {
+    display: flex;
+    gap: 1.5rem;
+    width: 77rem;
+    overflow: hidden;
+}
+main .main-body .introduce-movie .movie-cast .cast > li .cast-img {
+    width: 12.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+main .main-body .introduce-movie .movie-cast .cast > li .cast-img:hover {
+    transform: scale(0.95);
+}
+main .main-body .introduce-movie .movie-cast .cast > li .cast-img img {
+    width: 100%;
+    object-fit: cover;
+}
+main .main-body .introduce-movie .movie-cast .cast > li .name-cast {
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0.5rem;
+}
+main .main-body .introduce-movie .movie-cast .movie-cast-button-left {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 16.7rem;
+    background-color: #444141c7;
+    color: #fff;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+main .main-body .introduce-movie .movie-cast .movie-cast-button-right {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    height: 16.7rem;
+    background-color: #444141c7;
+    color: #fff;
+    font-size: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+main .main-body .introduce-movie .movie-cast .movie-cast-button-left:hover,
+main .main-body .introduce-movie .movie-cast .movie-cast-button-right:hover {
+    opacity: 0.9;
+    background-color: #292626cb;;
+}
+main .main-body .introduce-movie .movie-body .header-movie-body {
+    display: inline-block;
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 500;
+    padding-right: 1rem;
+}
+main .main-body .introduce-movie .movie-body .movie-body-review {
+    color: #6ba3cf;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .movie-body p {
+    font-size: 1.5rem;
+    padding: 0.5rem 0rem;
+    color: #ffffff99;
+    line-height: 1.6;
+}
+main .main-body .introduce-movie .movie-body h2,
+main .main-body .introduce-movie .movie-body h3,
+main .main-body .introduce-movie .movie-body h4,
+main .main-body .introduce-movie .movie-body ul li {
+    color: #AAAAAA;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+main .main-body .introduce-movie .movie-body .movie-body-img {
+    margin: 3rem 0rem;
+}
+main .main-body .introduce-movie .movie-body .movie-body-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 3px solid #404040;
+}
+main .main-body .introduce-movie .movie-body .movie-body-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1.5rem 0rem;
+    gap: 1.5rem;
+}
+main .main-body .introduce-movie .movie-body .movie-body-grid li {
+    height: 15rem;
+    border: 0.3rem solid #000;
+    background-color: #fff;
+}
+main .main-body .introduce-movie .movie-body .movie-body-grid li img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+main .main-body .introduce-movie .movie-body .tags-movie-body {
+    margin: 1.5rem 0rem;
+}
+main .main-body .introduce-movie .movie-body .tags-movie-body .tags {
+    font-size: 1.5rem;
+    color: #999999;
+}
+main .main-body .introduce-movie .movie-body .tags-movie-body .tags > ion-icon {
+    padding-right: 0.3rem;
+}
+main .main-body .introduce-movie .movie-body .tags-movie-body .tags a {
+    font-size: 1.5rem;
+    color: #FFFFFFCC;
+    background-color: #333333;
+    border-radius: 0.3rem;
+    padding: 0.2rem 0.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-left: 0.3rem;
+}
+main .main-body .introduce-movie .movie-body .tags-movie-body .tags ion-icon {
+    position: relative;
+    top: 0.1rem;
+}
+main .main-body .introduce-movie .movie-body .keyword-movie-body h4 {
+    font-size: 1.5rem;
+    color: #AAAAAA;
+    line-height: 1.6;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body {
+    margin-top: 2.5rem;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .header-trailer-movie-body {
+    font-size: 2.5rem;
+    color: #6ba3cf;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body {
+    position: relative;
+    margin-top: 1.5rem;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body img {
+    width: 100%;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body {
+    display: flex;
+    position: absolute;
+    top: 0rem;
+    width: 100%;
+    align-items: center;
+    padding: 0rem 1.5rem;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .net-flix-img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .net-flix-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .sub-net-flix {
+    position: absolute;
+    background-color: #181c24;
+    width: 30rem;
+    display: flex;
+    visibility: hidden;
+    border-bottom-left-radius: 5rem;
+    border-top-left-radius: 5rem;
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    justify-content: space-between;
+    padding-left: 2rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    height: 5rem;
+    align-items: center;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .sub-net-flix .net-flix-img:hover {
+    visibility: visible;
+    display: flex;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .sub-net-flix .content-sub-net-flix {
+    display: flex;
+    flex-direction: column;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .sub-net-flix .content-sub-net-flix a {
+    font-size: 1.5rem;
+    color: #fff;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .sub-net-flix .content-sub-net-flix span {
+    font-size: 1.2rem;
+    color: #fff;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .sub-net-flix .button-sub-net-flix {
+    padding-right: 1rem;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .sub-net-flix .button-sub-net-flix button {
+    background-color: #ff1a1af7;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.3rem;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .sub-net-flix .button-sub-net-flix button:hover {
+    opacity: 0.9;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .content-video-trailer-movie-body {
+    font-size: 1.8rem;
+    color: #EEEEEE;
+    padding-left: 1rem;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .button-video-trailer-movie-body {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+    gap: 1.5rem;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .button-video-trailer-movie-body button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    gap: 0.5rem;
+}
+main .main-body .introduce-movie .movie-body .trailer-movie-body .video-trailer-movie-body .sub-video-trailer-movie-body .button-video-trailer-movie-body button ion-icon {
+    position: relative;
+    top: 1rem;
+    color: #FFF;
+}
+main .main-body .introduce-movie .orther-movie {
+    margin-top: 3rem;
+}
+main .main-body .introduce-movie .orther-movie .header-orther-movie {
+    color: #AAAAAA;
+    font-size: 2.6rem;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .orther-movie .body-orther-movie {
+    display: flex;
+    gap: 2.5rem;
+    padding: 0rem 1rem;
+}
+main .main-body .introduce-movie .orther-movie .body-orther-movie .img-movie {
+   border-radius: 1rem;
+   overflow: hidden;
+   border: 0.1rem solid #181c24;
+   height: 23rem;
+   margin-bottom: 1rem;
+}
+main .main-body .introduce-movie .orther-movie .body-orther-movie .img-movie img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   transition: all 0.25s;
+}
+main .main-body .introduce-movie .orther-movie .body-orther-movie .img-movie:hover {
+    border: 0.1rem solid #FFF;
+}
+main .main-body .introduce-movie .orther-movie .body-orther-movie .img-movie:hover img {
+    transform: scale(1.05);
+}
+main .main-body .introduce-movie .orther-movie .body-orther-movie .content-movie {
+    width: 17rem;
+}
+main .main-body .introduce-movie .orther-movie .body-orther-movie .content-movie .name-movie {
+    font-size: 1.7rem;
+    color: #FFF;
+    font-weight: 500;
+}
+main .main-body .introduce-movie .orther-movie .body-orther-movie .content-movie .sub-name-movie {
+    font-size: 1.5rem;
+    color: #444444;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main .main-body .hot-movie {
+    width: 38rem;
+}
+main .main-body .hot-movie .trend-movie {
+    border-radius: 1rem;
+    background-color: #FFFFFF08;
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+main .main-body .hot-movie .trend-movie .header-trend-movie {
+    display: flex;
+    justify-content: space-between;
+}
+main .main-body .hot-movie .trend-movie .header-trend-movie p {
+    color: #ffb850;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+main .main-body .hot-movie .trend-movie .header-trend-movie a {
+    font-size: 1.5rem;
+    color: #FFFFFFCC;
+    font-style: italic;
+    font-weight: 700;
+}
+main .main-body .hot-movie .trend-movie .body-trend-movie {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0rem 0.7rem;
+}
+main .main-body .hot-movie .trend-movie .body-trend-movie li a {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0rem;
+}
+main .main-body .hot-movie .trend-movie .body-trend-movie .number-rating {
+    font-size: 2rem;
+    color: #ccc;
+    line-height: 2.6;
+    padding: 0rem 0.5rem;
+    width: 3rem;
+    text-align: center;
+}
+main .main-body .hot-movie .trend-movie .body-trend-movie .img-trend-movie {
+    width: 5rem;
+    height: 5rem;
+}
+main .main-body .hot-movie .trend-movie .body-trend-movie .img-trend-movie img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie .title-trend-movie {
+    font-size: 1.5rem;
+    color: #FFFFFFCC;
+    width: 17.7rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie .ep-view-trend-movie {
+    font-size: 1.2rem;
+    color: #FFFFFF66;
+    display: flex;
+    justify-content: space-between;
+}
+main .main-body .hot-movie .trend-movie .body-trend-movie .content-trend-movie .ep-view-trend-movie .view-trend-movie ion-icon {
+    position: relative;
+    top: 0.12rem;
+}
+main .main-body .hot-movie .new-movie {
+    border-radius: 1rem;
+    background-color: #FFFFFF08;
+    padding: 2rem;
+    height: 37.5rem;
+}
+main .main-body .hot-movie .new-movie .header-new-movie {
+    display: flex;
+    justify-content: space-between;
+}
+main .main-body .hot-movie .new-movie .header-new-movie p {
+    color: #ffb850;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+main .main-body .hot-movie .new-movie .header-new-movie a {
+    font-size: 1.5rem;
+    color: #FFFFFFCC;
+    font-style: italic;
+    font-weight: 700;
+}
+main .main-body .hot-movie .new-movie .body-new-movie {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: 0rem 0.7rem;
+    overflow-y: auto;
+    height: 30rem;
+}
+main .main-body .hot-movie .new-movie .body-new-movie::-webkit-scrollbar {
+    width: 0.3rem;
+    background-color: #111010cb;
+}
+main .main-body .hot-movie .new-movie .body-new-movie::-webkit-scrollbar-thumb {
+    background-color: #666;
+}
+main .main-body .hot-movie .new-movie .body-new-movie li a {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0rem;
+}
+main .main-body .hot-movie .new-movie .body-new-movie .img-new-movie {
+    width: 5rem;
+    height: 5rem;
+}
+main .main-body .hot-movie .new-movie .body-new-movie .img-new-movie img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie .title-new-movie {
+    font-size: 1.5rem;
+    color: #FFFFFFCC;
+    width: 20rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie .ep-view-new-movie {
+    font-size: 1.2rem;
+    color: #FFFFFF66;
+    display: flex;
+    justify-content: space-between;
+}
+main .main-body .hot-movie .new-movie .body-new-movie .content-new-movie .ep-view-new-movie .view-new-movie ion-icon {
+    position: relative;
+    top: 0.12rem;
+}
+footer {
+    background-color: #000000e3;
+    padding: 2rem 3rem;
+}
+footer .another-link a {
+    font-size: 1.5rem;
+    color: #999999;
+    background-color: #333333;
+    padding: 0.2rem 0.5rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    display: inline-block;
+    margin: 0.3rem 0rem;
+}
+footer .another-link a:hover {
+    color: #fafafa;
+}
+footer .logo-img {
+    text-align: center;
+    margin-top: 3rem;
+}
+footer .bottom-footer {
+    text-align: center;
+}
+footer .bottom-footer p,
+a {
+    font-size: 1.5rem;
+    color: #999999;
+}
+footer .bottom-footer p a:hover {
+    color: #fafafa;
+}

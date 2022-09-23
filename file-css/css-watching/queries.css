@@ -1,0 +1,60 @@
+/* Spacing: 2 / 4 / 8 / 12 / 16 / 24 / 32 / 40 / 48 / 64 / 80 / 96 / 160 */
+/* Font Scale: 12 / 14 / 16 / 18 / 20 / 24 / 28 / 32 / 36 / 42 / 48 / 54 / 60 / 68 / 76 / 84 / 92 */
+
+/* Các tablet (landscape) */
+@media (max-width: 1200px) {
+  .container {
+      max-width: 100rem;
+  }
+}
+
+/* Các tablet (portrait) */
+@media (max-width: 944px) {
+    
+    header .nav-mobile {
+        display: block;
+    }
+    header .header-user {
+        display: none;
+    }
+    header .header-menu {
+        display: none;
+    }
+    main .address a:nth-child(1) {
+        display: none;
+    }
+    main .watch-video .server-control .control li:nth-child(1) {
+        display: none;
+    }
+    main .discussion-key {
+        display: block;
+    }
+    main .discussion-key .key {
+        margin-top: 10px;
+    }
+}
+
+/* Các tablet có kích thước nhỏ */
+@media (max-width: 704px) {
+    header .nav-mobile .header-menu-mobile .header-menu a {
+        padding: 0rem 1.5rem;
+    }
+}
+
+/* Các thiết bị di động */
+@media (max-width: 544px) {
+    header .nav-mobile .header-menu-mobile .header-menu a {
+        padding: 0rem 1rem;
+    }
+    main .watch-video .server-control .server p {
+        display: none;
+    }
+}
+@media (max-width: 430px) {
+    html {
+        font-size: 55%;
+    }
+    header .nav-mobile .header-menu-mobile .header-menu a {
+        padding: 0rem 0.3rem;
+    }
+}

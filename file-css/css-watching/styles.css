@@ -1,0 +1,712 @@
+header .nav-mobile {
+    background-color: #673ab7;
+    padding: 1.25rem 0.625rem;
+    display: none;
+}
+header .nav-mobile .header-user-mobile {
+    display: flex;
+    gap: 1.8rem;
+    padding-bottom: 2.125rem;
+}
+header .nav-mobile .header-user-mobile .logo-img {
+    width: 18.75rem;
+}
+header .nav-mobile .header-user-mobile .logo-img img {
+    width: 100%;
+}
+header .nav-mobile .header-user-mobile .search-input {
+    flex-grow: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+header .nav-mobile .header-user-mobile .search-input input {
+    width: 100%;
+    padding: 1.25rem;
+    border-radius: 0.625rem;
+    border: none;
+}
+header .nav-mobile .header-user-mobile .search-input button {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.25rem;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 2.5rem;
+    color: #666;
+}
+header .nav-mobile .header-menu-mobile .header-menu {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+header .nav-mobile .header-menu-mobile .header-menu a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    border-right: 0.125rem solid #000;
+    padding: 0rem 2.5rem;
+    gap: 0.375rem;
+}
+header .nav-mobile .header-menu-mobile .header-menu a ion-icon {
+    
+    font-size: 2.5rem;
+}
+header .nav-mobile .header-menu-mobile .header-menu span {
+    font-size: 1.5rem;
+}
+header .header-user {
+    display: flex;
+    height: 7.8rem;
+    background-color: #673ab7;
+}
+header .header-user .logo-img {
+    flex: 0.7;
+    display: flex;
+    align-items: center;
+}
+header .header-user .logo-img img {
+    height: 5.3rem;
+}
+header .header-user .search-input {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+}
+header .header-user .search-input input {
+    height: 3.5rem;
+    width: 35rem;
+    color: #666;
+    border-radius: 5rem;
+    padding: 1rem 0rem;
+    padding-left: 2rem;
+    line-height: 3.5rem;
+    background-color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+}
+header .header-user .search-input button {
+    background-color: #FFF;
+    border: none;
+    position: relative;
+    right: 3.2rem;
+    top: 0.3rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+header .header-user .user-button {
+    flex: 0.9;
+    display: flex;
+    gap: 1.5rem;
+}
+header .header-user .user-button .sign-up-vip,
+header .header-user .user-button .sign-up,
+header .header-user .user-button .login {
+    display: flex;
+    align-items: center;
+}
+header .header-user .user-button .sign-up-vip a {
+    color: #da9e1cFF;
+    border: 1px solid #da9e1cFF;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    padding: 1.4rem 1rem;
+    background-color: #181c24;
+    font-weight: 500;
+}
+header .header-user .user-button .sign-up a,
+header .header-user .user-button .login a {
+    font-size: 1.4rem;
+    color: #FFF;
+    background-color: #FFFFFF1A;
+    border: 1px solid #FFFFFF1A;
+    border-radius: 5rem;
+    padding: 0.8rem;
+}
+header .header-user .user-button .sign-up a:hover,
+header .header-user .user-button .login a:hover {
+    background-color: #ffffff38;
+}
+header .header-menu {
+    background-color: #000000e1
+}
+header .header-menu .navigation {
+    display: flex;
+    height: 4rem;
+}
+header .header-menu .navigation>li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .header-menu .navigation>li a {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+header .header-menu .navigation > li:hover {
+    background-color: #ffb850;
+}
+header .header-menu .navigation > li:hover > a {
+    color: #181c24;
+}
+header .header-menu .navigation li a ion-icon {
+    font-size: 1.5rem;
+    position: relative;
+    top: 0.3rem;
+}
+header .header-menu .navigation li .sub-navigation {
+    position: absolute;
+    top: 100%;
+    background-color: #030303;;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 55rem;
+    display: none;
+    border: 0.1rem solid #ffffff4d;
+    z-index: 1;
+}
+header .header-menu .navigation > li:hover .sub-navigation {
+    display: grid;
+}
+header .header-menu .navigation li .sub-navigation li {
+    height: 4rem;
+    display: flex;
+    align-items: center;
+}
+header .header-menu .navigation li .sub-navigation li a {
+    font-weight: 300;
+    height: 100%;
+    width: 100%;
+}
+header .header-menu .navigation li .sub-navigation li:hover {
+    background-color: #ffb850;
+}
+header .header-menu .navigation li .sub-navigation li:hover a {
+    color: #181c24;
+}
+main .address {
+    margin: 2.5rem 0rem;
+}
+main .address a {
+    font-size: 1.5rem;
+    color: #AAAAAA;
+    font-weight: 700;
+    background-color: #2A2F3A;
+    padding: 1rem 1rem;
+    padding-left: 3rem;
+    border: 0.1rem solid #000;
+}
+main .notice p {
+    font-size: 1.5rem;
+    color: #FFF;
+    font-weight: 500;
+    padding: 1rem;
+    background-color: #2A2F3A;
+    border: 0.1rem solid #ffb850;
+    text-align: center;
+}
+main .notice p span {
+    color: #ffc107;
+}
+main .watch-video {
+    background-color: #2A2F3A;
+    padding-bottom: 1.5rem;
+    border-radius: 0.5rem;
+}
+main .watch-video .server-control {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    cursor: default;
+}
+main .watch-video .server-control .server {
+    display: flex;
+    gap: 1.5rem;
+}
+main .watch-video .server-control .server p {
+    font-size: 1.5rem;
+    color: #AAA;
+    padding-bottom: 0.3rem;
+}
+main .watch-video .server-control .server p ion-icon {
+    position: relative;
+    top: 0.3rem;
+    font-size: 2rem;
+}
+main .watch-video .server-control .server ul {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+main .watch-video .server-control .server ul li {
+    background-color: #444;
+    border-radius: 0.5rem;
+    font-size: 1.1rem;
+    color: #FFF;
+    padding: 0.5rem 1rem;
+}
+main .watch-video .server-control .server ul li:first-child {
+    background-color: #d9534f;
+}
+main .watch-video .server-control .server ul li:nth-child(2):hover,
+main .watch-video .server-control .server ul li:nth-child(3):hover {
+    background-color: #505050;
+}
+main .watch-video .server-control .control {
+    display: flex;
+    gap: 0.5rem;
+}
+main .watch-video .server-control .control li {
+    color: #FFF;
+    font-size: 1.1rem;
+    background-color: #444;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+main .watch-video .server-control .control li:hover {
+    background-color: #555;
+}
+main .watch-video .server-control .control li:nth-child(2):hover {
+    color: #ffb850;
+}
+main .watch-video .video .watching {
+    background-color: #000;
+    height: 60rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+main .watch-video .video .watching div {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+main .watch-video .video .watching div ion-icon {
+    font-size: 5.5rem;
+    color: #555;
+    cursor: pointer;
+}
+main .watch-video .video .button {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+}
+main .watch-video .video .button .next-movie button {
+    font-size: 1.5rem;
+    color: #FFF;
+    background-color: #6BA3CF;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+}
+main .watch-video .video .button .next-movie button ion-icon {
+    position: relative;
+    top: 0.3rem;
+}
+main .watch-video .video .button .follow {
+    display: flex;
+    gap: 0.5rem;
+}
+main .watch-video .video .button .follow div {
+    font-size: 1.5rem;
+    color: #000;
+    background-color: #FFF;
+    padding: 0.5em;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+main .watch-video .video .button .follow button {
+    font-size: 1.5rem;
+    color: #FFF;
+    background-color: #c00;
+    font-weight: 700;
+    padding: 0.6rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+main .watch-video .video .button .follow button ion-icon {
+    font-size: 2.1rem;
+}
+main .name-movie {
+    padding: 1.5rem 0.5rem;
+}
+main .name-movie .name {
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 500;
+}
+main .name-movie .sub-name {
+    font-size: 1.3rem;
+    color: #AAAAAA;
+    padding: 0.7rem 0rem;
+}
+main .episodes {
+    background-color: #2A2F3A;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 3rem;
+}
+main .episodes .sub-language {
+    font-size: 1.6rem;
+    color: #CCC;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+main .episodes .sub-language ion-icon {
+    position: relative;
+    top: 0.3rem;
+}
+main .episodes .episodes-list {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+main .episodes .episodes-list li a {
+    display: inline-block;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    background-color: #2e3546;
+    padding: 1rem 1.7rem;
+    border: 0.1rem solid #636e86f6;
+    border-radius: 0.3rem;
+}
+main .episodes .episodes-list li:nth-child(1) a {
+    background-color: #ffb850;
+    color: #000;
+}
+main .episodes .episodes-list li:nth-child(2) a {
+    background-color: #5A688A;
+}
+main .episodes .episodes-list li a:hover {
+    background-color: #ffb850;
+    color: #000;
+}
+main .discussion-key {
+    display: flex;
+    gap: 3rem;
+}
+main .discussion-key .discussion {
+    flex: 2;
+}
+main .discussion-key .discussion .share {
+    background-color: #2A2F3A;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+}
+main .discussion-key .discussion .share button {
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.4rem;
+    background-color: #0768EA;
+    font-weight: 500;
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+main .discussion-key .discussion .share button ion-icon {
+    position: relative;
+    top: 0.1rem;
+}
+main .discussion-key .discussion .share p {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem 0rem;
+    font-weight: 300;
+}
+main .discussion-key .discussion .comment {
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+main .discussion-key .discussion .comment .header-comment {
+    display: flex;
+    gap: 1rem;
+}
+main .discussion-key .discussion .comment .header-comment .fb,
+main .discussion-key .discussion .comment .header-comment .system {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+main .discussion-key .discussion .comment .header-comment .fb {
+    background-color: #6ba3cf;
+    color: #fff;
+    cursor: pointer;
+}
+main .discussion-key .discussion .comment .header-comment .system {
+    background-color: #DDDDDD;
+    color: #444;
+    cursor: pointer;
+}
+main .discussion-key .discussion .comment .header-comment ion-icon {
+    position: relative;
+    top: 0.1rem;
+}
+main .discussion-key .discussion .comment .user-comment .header-user-comment {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0.5rem;
+}
+main .discussion-key .discussion .comment .user-comment .header-user-comment .sum-comment {
+    font-size: 1.4rem;
+    color: #1c1e21;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+main .discussion-key .discussion .comment .user-comment .header-user-comment .sort-comment p {
+    color: #4b4f56;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+main .discussion-key .discussion .comment .user-comment .header-user-comment .sort-comment p button {
+    font-size: 1.2rem;
+    color: #4b4f56;
+    border: 0.1rem solid #ccd0d5;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+main .discussion-key .discussion .comment .user-comment .header-user-comment .sort-comment p button:hover {
+    background-color: #ebedf0;
+}
+main .discussion-key .discussion .comment .user-comment .header-user-comment .sort-comment p button ion-icon {
+    transform: rotate(90deg);
+    font-size: 1rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment {
+    border-top: 0.1rem solid #bdc7d8;
+    border-bottom: 0.1rem solid #bdc7d8;
+    padding: 3rem 0.5rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .write-comment {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .write-comment .avt-img {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .write-comment .avt-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .write-comment form {
+    flex-grow: 1;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .write-comment form input {
+    font-size: 1.5rem;
+    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    border: 0.1rem solid #bdc7d8;
+    outline: none;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment li > div {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment > li .rep-comment {
+    border-left: 0.1rem solid #bdc7d8;
+    padding-left: 0.5rem;
+    display: block;
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .rep-comment > li {
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .avt-img {
+    height: 4.5rem;
+    width: 4.5rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .rep-comment .avt-img {
+    height: 4rem;
+    width:  4rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .avt-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .name-comment-interactive {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .name-comment-interactive .name a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #385898;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .name-comment-interactive .name a:hover {
+    text-decoration: underline;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .name-comment-interactive .comment {
+    font-size: 1.5rem;
+    color: #1c1e21;
+    padding: 0rem;
+    font-weight: 400;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .name-comment-interactive .interactive {
+    display: flex;
+    gap: 1rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .name-comment-interactive .interactive li:nth-child(1) a,
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .name-comment-interactive .interactive li:nth-child(2) a {
+    font-size: 1.2rem;
+    color: #4267b2;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .name-comment-interactive .interactive li:nth-child(3) a {
+    font-size: 1.2rem;
+    color: #90949c;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment .name-comment-interactive .interactive li a:hover {
+    text-decoration: underline;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment > li > div > ion-icon,
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment > li .rep-comment > li > ion-icon {
+    position: absolute;
+    right: 0px;
+    color: #bdc7d8;
+    font-size: 2.5rem;
+    display: none;
+    cursor: pointer;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment > li:hover ion-icon,
+main .discussion-key .discussion .comment .user-comment .body-user-comment .read-comment > li .rep-comment > li:hover ion-icon {
+    display: inline-block;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .add-comment {
+    margin-top: 1.5rem;
+}
+main .discussion-key .discussion .comment .user-comment .body-user-comment .add-comment button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #3578e5;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+}
+main .discussion-key .discussion .comment .user-comment .footer-user-comment {
+    margin-top: 1rem;
+}
+main .discussion-key .discussion .comment .user-comment .footer-user-comment p {
+    color: #385898;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+main .discussion-key .key {
+    flex: 1;
+}
+main .discussion-key .key p {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+main .discussion-key .key p a {
+    color: #6ba3cf;
+}
+main .key-word {
+    margin-top: 1.5rem;
+}
+main .key-word p {
+    color: #999999;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+main .key-word p a {
+    color: #FFFFFFCC;
+    background-color: #333;
+    font-size: 1.5rem;
+    display: inline-block;
+    margin: 0.3rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.3rem;
+}
+main .key-word ion-icon {
+    position: relative;
+    top: 0.1rem;
+}
+footer {
+    background-color: #000000e3;
+    padding: 2rem 3rem;
+    margin-top: 1rem;
+}
+footer .another-link {
+    text-align: center;
+}
+footer .another-link a {
+    font-size: 1.5rem;
+    color: #999999;
+    background-color: #333333;
+    padding: 0.2rem 0.5rem;
+    font-weight: 500;
+    border-radius: 0.3rem;
+    display: inline-block;
+    margin: 0.3rem 0rem;
+}
+footer .another-link a:hover {
+    color: #fafafa;
+}
+footer .logo-img {
+    text-align: center;
+    margin-top: 3rem;
+}
+footer .bottom-footer {
+    text-align: center;
+}
+footer .bottom-footer p,
+a {
+    font-size: 1.5rem;
+    color: #999999;
+}
+footer .bottom-footer p a:hover {
+    color: #fafafa;
+}

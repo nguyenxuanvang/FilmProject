@@ -75,6 +75,7 @@ header .header-user .search-input {
     flex: 1.2;
     display: flex;
     align-items: center;
+    position: relative;
 }
 header .header-user .search-input input {
     height: 3.5rem;
@@ -98,6 +99,23 @@ header .header-user .search-input button {
     top: 0.3rem;
     font-size: 1.7rem;
     cursor: pointer;
+}
+header .header-user .search-input .search-popup {
+    width: 65%;
+    background-color: #fff;
+    height: 12rem;
+    position: absolute;
+    border-radius: 1rem;
+    top: 80%;
+    left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+header .header-user .search-input .search-popup .search-content {
+    font-size: 18px;
+    text-align: center;
 }
 header .header-user .user-button {
     flex: 0.9;
@@ -286,8 +304,20 @@ main .main-body .introduce-movie .header-introduce li:hover a {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.movie-display-grid > li .ep {
+.movie-display-grid > li > div {
+    display: flex;
     position: absolute;
+    top: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0.3rem;
+}
+.movie-display-grid > li > div > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.movie-display-grid > li .ep {
     color: #fff;
     top: 0.7rem;
     left: 0.7rem;
@@ -326,9 +356,6 @@ main .main-body .introduce-movie .header-introduce li:hover a {
     width: 15rem;
     flex-shrink: 0;
 }
-.section-12 .movie-display-flex > li {
-    width: 21rem;
-}
 .movie-display-flex .movie-img {
     width: 100%;
     height: 21rem;
@@ -338,16 +365,10 @@ main .main-body .introduce-movie .header-introduce li:hover a {
 .movie-display-flex .movie-img:hover {
     transform: scale(0.9);
 }
-.section-12 .movie-display-flex .movie-img {
-    height: 15rem;
-}
 .movie-display-flex .movie-img img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-}
-.section-12 .movie-display-flex .movie-img img {
-    object-fit: fill;
 }
 .movie-display-flex .movie-content .name-movie {
     color: #fff;
@@ -366,9 +387,7 @@ main .main-body .introduce-movie .header-introduce li:hover a {
     color: #ffffffbd;
     font-size: 2.5rem;
     border: none;
-}
-.section-12 .movie-display-flex .change-right-button {
-    height: 15rem;
+    z-index: 1;
 }
 .movie-display-flex .change-left-button {
     position: absolute;
@@ -381,9 +400,7 @@ main .main-body .introduce-movie .header-introduce li:hover a {
     color: #fff;
     font-size: 2.5rem;
     border: none;
-}
-.section-12 .movie-display-flex .change-left-button {
-    height: 15rem;
+    z-index: 1;
 }
 .movie-display-flex .change-right-button:hover,
 .movie-display-flex .change-left-button:hover {

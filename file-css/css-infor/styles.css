@@ -77,6 +77,7 @@ header .header-user .search-input {
     flex: 1.2;
     display: flex;
     align-items: center;
+    position: relative;
 }
 header .header-user .search-input input {
     height: 3.5rem;
@@ -100,6 +101,23 @@ header .header-user .search-input button {
     top: 0.3rem;
     font-size: 1.7rem;
     cursor: pointer;
+}
+header .header-user .search-input .search-popup {
+    width: 65%;
+    background-color: #fff;
+    height: 12rem;
+    position: absolute;
+    border-radius: 1rem;
+    top: 80%;
+    left: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+header .header-user .search-input .search-popup .search-content {
+    font-size: 18px;
+    text-align: center;
 }
 header .header-user .user-button {
     flex: 0.9;

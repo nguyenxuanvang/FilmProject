@@ -47,9 +47,7 @@ a {
     color: #181c24;
 }
 .current-vip {
-    position: absolute;
-    top: 1.5rem;
-    right: 1rem;
+    
     color: #181c24;
     background-color: #ffb850;
     font-size: 1.2rem;
@@ -59,9 +57,7 @@ a {
     cursor: default;
 }
 .current-voice {
-    position: absolute;
-    top: 1.5rem;
-    right: 4rem;
+   
     font-size: 1.2rem;
     background-color: #ff50b6e1;
     border: none;

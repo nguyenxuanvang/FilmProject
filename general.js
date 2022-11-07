@@ -66,4 +66,34 @@ inputNode.addEventListener("input",(event) => {
     else inputNode.parentElement.children[2].style.display = 'none';
     let searchContent = event.target.value;
     inputNode.parentElement.children[2].children[0].textContent = `Nội dung tìm kiếm '${searchContent}'`;
+});
+let conditionLogin = JSON.parse(localStorage.getItem('conditionLogin'));
+const userButtonNode = document.querySelector('.header-user .user-button');
+const userInformationNode = document.querySelector('.header-user .user-information');
+if(conditionLogin === true) {
+    userButtonNode.style.display = 'none';
+    userInformationNode.style.display = 'flex';
+    const userAvtNode = document.querySelector('.user-information .user-avt');
+    const userMenuNode = document.querySelector('.user-information .user-avt .user-menu');
+    let kt = 0;
+    userAvtNode.addEventListener('click',()=>{
+        if(kt === 0) {
+            userMenuNode.style.display = 'flex';
+            kt = 1;
+        }
+        else {
+            userMenuNode.style.display = 'none';
+            kt = 0;
+        }
+    });
+}
+else {
+    userButtonNode.style.display = 'flex';
+    userInformationNode.style.display = 'none';
+}
+const logOutNode = userMenuNode.querySelector('.log-out');
+logOutNode.addEventListener('click',() => {
+    conditionLogin = false;
+    localStorage.setItem('conditionLogin', JSON.stringify(conditionLogin));
+    window.location = "login.html";
 })

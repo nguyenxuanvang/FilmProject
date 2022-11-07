@@ -55,6 +55,17 @@
     border: none;
     outline: none;
 }
+.login-form .user-password .user p,
+.login-form .user-password .password p {
+    width: 30rem;
+    margin: 0 auto;
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    margin-top: 0.5rem;
+    position: relative;
+    top: 0.5rem;
+}
 .login-form .user-password .login-button button {
     width: 30rem;
     background-color: #0768EA;
@@ -70,6 +81,15 @@
 }
 .login-form .user-password .login-button button:hover {
     opacity: 0.9;
+}
+.login-form .alertLogin {
+    width: 30rem;
+    margin: 0 auto;
+    font-size: 14px;
+    color: red;
+    text-align: center;
+    position: relative;
+    top: -0.5rem;
 }
 .login-form .user-password .change-to-registration {
     display: flex;

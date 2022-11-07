@@ -62,3 +62,6 @@ a {
     background-color: #ff50b6e1;
     border: none;
 }
+.hidden {
+    display: none;
+}

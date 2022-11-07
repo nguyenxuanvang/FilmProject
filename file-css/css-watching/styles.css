@@ -13,6 +13,7 @@ header .nav-mobile .header-user-mobile .logo-img {
 }
 header .nav-mobile .header-user-mobile .logo-img img {
     width: 100%;
+    border-radius: 50%;
 }
 header .nav-mobile .header-user-mobile .search-input {
     flex-grow: 1;
@@ -70,6 +71,7 @@ header .header-user .logo-img {
 }
 header .header-user .logo-img img {
     height: 5.3rem;
+    border-radius: 50%;
 }
 header .header-user .search-input {
     flex: 1.2;

@@ -5,13 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập | BiluTV</title>
-    <link rel="icon" href="https://biluu.tv/favicon.png" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <title>Đăng nhập | VangTV</title>
+    <link rel="shortcut icon" href="https://scontent.fdad3-4.fna.fbcdn.net/v/t1.15752-9/312381618_803847964214594_7264468462934404802_n.png?stp=cp0_dst-png&_nc_cat=105&ccb=1-7&_nc_sid=ae9488&_nc_ohc=Eyf0Jrnkbw8AX9dk16Y&_nc_ht=scontent.fdad3-4.fna&oh=03_AdRRUdpLNTLKCTiUVxiyR7Ac2b39OaYBM6WqWiRh91X1qA&oe=638F95D1" type="image/x-icon">
     <link rel="stylesheet" href="./file-css/general.css">
     <link rel="stylesheet" href="./file-css/css-login/styles.css">
 </head>
@@ -22,20 +17,24 @@
             <p>Đăng nhập tài khoản</p>
         </div>
         <div class="logo-img">
-            <img src="https://biluu.tv/Theme/images/logo-s64.png" alt="BiluTV-Logo">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/003/651/643/small/v-letter-logo-icon-for-business-and-company-vector.jpg" 
+            alt="Logo-VangTV">
         </div>
         <form class="user-password">
             <div class="user">
                 <ion-icon name="mail-outline"></ion-icon>
                 <input type="text" placeholder="Tên tài khoản">
+                <p class="hidden"></p>
             </div>
             <div class="password">
                 <ion-icon name="lock-closed"></ion-icon>
-                <input type="text" placeholder="Mật khẩu">
+                <input type="password" placeholder="Mật khẩu">
+                <p class="hidden"></p>
             </div>
             <div class="login-button">
                 <button>Đăng Nhập</button>
             </div>
+            <p class="alertLogin hidden"></p>
             <div class="change-to-registration">
                 <p>Bạn chưa có tài khoản ? </p>
                 <a href="./registration.html">Đăng Ký</a>
@@ -44,6 +43,7 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./login.js"></script>
 </body>
 
 </html>

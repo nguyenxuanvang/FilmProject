@@ -13,6 +13,7 @@ header .nav-mobile .header-user-mobile .logo-img {
 }
 header .nav-mobile .header-user-mobile .logo-img img {
     width: 100%;
+    border-radius: 50%;
 }
 header .nav-mobile .header-user-mobile .search-input {
     flex-grow: 1;
@@ -70,6 +71,7 @@ header .header-user .logo-img {
 }
 header .header-user .logo-img img {
     height: 5.3rem;
+    border-radius: 50%;
 }
 header .header-user .search-input {
     flex: 1.2;
@@ -150,6 +152,51 @@ header .header-user .user-button .login a {
 header .header-user .user-button .sign-up a:hover,
 header .header-user .user-button .login a:hover {
     background-color: #ffffff38;
+}
+header .header-user .user-information {
+    flex: 0.5;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 1.5rem;
+}
+header .header-user .user-information .user-name {
+    font-size: 17px;
+    color: #030303;
+    font-weight: 600;
+}
+header .header-user .user-information .user-avt {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+header .header-user .user-information .user-avt img {
+    width: 100%;
+    border-radius: 50%;
+}
+header .header-user .user-information .user-avt:hover {
+    cursor: pointer;
+}
+header .header-user .user-information .user-avt .user-menu {
+ position: absolute;
+ top: 100%;
+ right: -100%; 
+ display: none;
+ flex-direction: column;
+ background-color: #302f2f;
+ width: 15rem;
+ text-align: left;
+}
+header .header-user .user-information .user-avt .user-menu a {
+    color: #fff;
+    padding: 0.5rem;
+    padding-left: 3rem;
+    
+}
+header .header-user .user-information .user-avt .user-menu a:hover {
+    background-color: #ffb850;
+    color: #030303;
 }
 header .header-menu {
     background-color: #000000e1

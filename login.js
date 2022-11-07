@@ -4,6 +4,10 @@ const alertLoginNode = document.querySelector('.login-form .alertLogin');
 let accountList = JSON.parse(localStorage.getItem('accountList'));
 if(accountList === null) accountList = [];
 let conditionLogin = false;
+const LoginUser = function(user,password) {
+    this.user = user;
+    this.password = password;
+}
 const checkValidAccount = function(acc,pass) {
     for(let i = 0; i < accountList.length; i += 1)
         if(accountList[i].user === acc && accountList[i].password === pass)
@@ -34,6 +38,8 @@ loginButtonNode.addEventListener('click',(event)=>{
                 alertLoginNode.textContent = `Đăng Nhập Thành Công`;
                 conditionLogin = true;
                 localStorage.setItem('conditionLogin',JSON.stringify(conditionLogin));
+                const loginUser = new LoginUser(inputNodes[0].value,inputNodes[1].value);
+                localStorage.setItem('LoginUser',JSON.stringify(loginUser));
                 setTimeout(()=>{
                     window.location = "index.html";
                 },500);

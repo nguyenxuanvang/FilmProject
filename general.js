@@ -70,11 +70,14 @@ inputNode.addEventListener("input",(event) => {
 let conditionLogin = JSON.parse(localStorage.getItem('conditionLogin'));
 const userButtonNode = document.querySelector('.header-user .user-button');
 const userInformationNode = document.querySelector('.header-user .user-information');
+const userNameNode = document.querySelector('.user-information .user-name');
 const userAvtNode = document.querySelector('.user-information .user-avt');
 const userMenuNode = document.querySelector('.user-information .user-avt .user-menu');
 if(conditionLogin === true) {
     userButtonNode.style.display = 'none';
     userInformationNode.style.display = 'flex';
+    const loginUser = JSON.parse(localStorage.getItem('LoginUser'));
+    userNameNode.textContent = `${loginUser.user}`;
     let kt = 0;
     userAvtNode.addEventListener('click',()=>{
         if(kt === 0) {
@@ -95,5 +98,6 @@ const logOutNode = userMenuNode.querySelector('.log-out');
 logOutNode.addEventListener('click',(event) => {
     conditionLogin = false;
     localStorage.setItem('conditionLogin', JSON.stringify(conditionLogin));
+    localStorage.setItem('LoginUser',null);
     window.location = "login.html";
 });

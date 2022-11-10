@@ -28,59 +28,88 @@ const checkAccount = function(acc) {
             return false;
     return true;
 }
-registrationNode.addEventListener('click', () => {
-    inputNodes.forEach(element => {
-        element.parentElement.children[2].classList.add('hidden');
-    });
-    if(inputNodes[0].value === '') {
-        inputNodes[0].parentElement.children[2].classList.remove('hidden');
-        inputNodes[0].parentElement.children[2].textContent = `Vui Lòng Không Bỏ Trống`;
+const checkUserName = function(input) {
+    if(input.value === '') {
+        input.parentElement.children[2].classList.remove('hidden');
+        input.parentElement.children[2].textContent = `Vui Lòng Không Bỏ Trống`;
+        return false;
     }
-    else {
-        if(checkVN(inputNodes[0].value) === false) {
-            inputNodes[0].parentElement.children[2].classList.remove('hidden');
-            inputNodes[0].parentElement.children[2].textContent = `Vui Lòng Không Chứa Kí Tự Đặc Biệt`;
+    if(checkVN(input.value) === false) {
+        input.parentElement.children[2].classList.remove('hidden');
+        input.parentElement.children[2].textContent = `Vui Lòng Không Chứa Kí Tự Đặc Biệt`;
+        return false;
+    }
+    input.parentElement.children[2].classList.add('hidden');
+    return true;
+}
+const checkValidtUserName = function(input) {
+    if(checkAccount(input.value) === false) {
+        input.parentElement.children[2].classList.remove('hidden');
+        input.parentElement.children[2].textContent = `Tên Đăng Nhập Đã Tồn Tại`;
+        return false;
+    }
+    if(input.value.length < 6) {
+        input.parentElement.children[2].classList.remove('hidden');
+        input.parentElement.children[2].textContent = `Tên Đăng Nhập Quá Ngắn`;
+        return false;
+    }
+    input.parentElement.children[2].classList.add('hidden');
+    return true;
+}
+const checkPasswork = function(input) {
+    if(input.value === '') {
+        input.parentElement.children[2].classList.remove('hidden');
+        input.parentElement.children[2].textContent = `Vui Lòng Không Bỏ Trống`;
+        return false;
+    }
+    if(input.value.length < 6 || input.value.length > 15) {
+        input.parentElement.children[2].classList.remove('hidden');
+        input.parentElement.children[2].textContent = `Mật Khẩu Phải Từ 6 - 15 Kí Tự`;
+        return false;
+    }
+    input.parentElement.children[2].classList.add('hidden');
+    return true;
+}
+const checkValidPassword = function(input) {
+    if(input.value !== inputNodes[1].value) {
+        input.parentElement.children[2].classList.remove('hidden');
+        input.parentElement.children[2].textContent = `Mật Khẩu Xác Nhận Không Chính Xác`;
+        return false;
+    }
+    input.parentElement.children[2].classList.add('hidden');
+    return true;
+}
+registrationNode.addEventListener('click', () => {
+    inputNodes.forEach(item => {
+        item.parentElement.children[2].classList.add('hidden');
+    });
+    let isValid = true;
+    while(isValid) {
+        if(checkUserName(inputNodes[0]) === false) {
+            isValid = false;
+            break;
         }
-        else {
-            if(inputNodes[1].value === '') {
-                inputNodes[1].parentElement.children[2].classList.remove('hidden');
-                inputNodes[1].parentElement.children[2].textContent = `Vui Lòng Không Bỏ Trống`;
-            }
-            else {
-                if(inputNodes[1].value.length < 6 || inputNodes[1].value.length > 15) {
-                    inputNodes[1].parentElement.children[2].classList.remove('hidden');
-                    inputNodes[1].parentElement.children[2].textContent = `Mật Khẩu Phải Từ 6 - 15 Kí Tự`;
-                }
-                else {
-                    if(inputNodes[2].value === '') {
-                        inputNodes[2].parentElement.children[2].classList.remove('hidden');
-                        inputNodes[2].parentElement.children[2].textContent = `Vui Lòng Không Bỏ Trống`;
-                    }
-                    else {
-                        if(inputNodes[2].value !== inputNodes[1].value) {
-                            inputNodes[2].parentElement.children[2].classList.remove('hidden');
-                            inputNodes[2].parentElement.children[2].textContent = `Mật Khẩu Xác Nhận Không Chính Xác`;
-                        }
-                        else {
-                            console.log(checkAccount(inputNodes[0].value));
-                            if(checkAccount(inputNodes[0].value) === false) {
-                                inputNodes[0].parentElement.children[2].classList.remove('hidden');
-                                inputNodes[0].parentElement.children[2].textContent = `Tên Đăng Nhập Đã Tồn Tại`;
-                            }
-                            else {
-                                const account = new Account(inputNodes[0].value,inputNodes[1].value);
-                                accountList.push(account);
-                                localStorage.setItem('accountList',JSON.stringify(accountList));
-                                alertRegistrationNode.classList.remove('hidden');
-                                setTimeout(() => {
-                                    window.location = "login.html";
-                                },500);
-                            }     
-                            
-                        }
-                    }
-                }
-            }
+        if(checkPasswork(inputNodes[1]) === false) {
+            isValid = false;
+            break;
         }
+        if(checkValidPassword(inputNodes[2]) === false) {
+            isValid = false;
+            break;
+        }
+        if(checkValidtUserName(inputNodes[0]) === false) {
+            isValid = false;
+            break;
+        }
+        break;
+    }
+    if(isValid) {
+        const account = new Account(inputNodes[0].value,inputNodes[1].value);
+        accountList.push(account);
+        localStorage.setItem('accountList',JSON.stringify(accountList));
+        alertRegistrationNode.classList.remove('hidden');
+        setTimeout(() => {
+            window.location = "login.html";
+        },500);
     }
 });

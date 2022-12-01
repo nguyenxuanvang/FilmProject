@@ -108,8 +108,10 @@ registrationNode.addEventListener('click', () => {
         accountList.push(account);
         localStorage.setItem('accountList',JSON.stringify(accountList));
         alertRegistrationNode.classList.remove('hidden');
+        /*
         setTimeout(() => {
             window.location = "login.html";
         },500);
+        */
     }
 });
